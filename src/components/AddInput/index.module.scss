@@ -1,0 +1,29 @@
+.inputWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  .input {
+    border: 1px solid #b1b1b1;
+    border-radius: 5px 0 0 5px;
+    padding: 9px 10px;
+    outline: none;
+    font: 1rem/1.4 'Roboto', sans-serif;
+    background-color: #dbe2eb;
+    &::placeholder {
+      color: #7b7b7b;
+    }
+    &:focus {
+      outline: 2px solid #3F72AF;
+    }
+  }
+  .button {
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background: #3F72AF url('./icons/plus.svg') no-repeat center center;
+    cursor: pointer;
+    transition: opacity .3s linear;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  padding-top: 15px;
+  border-top: 2px solid #3F72AF;
+  display: flex;
+  justify-content: space-between;
+
+  .filterBtns {
+    display: flex;
+    gap: 5px;
+  }
+
+  .filterBtn {
+    background-color: transparent;
+    border: 1px solid #3F72AF;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: #3F72AF;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    &:hover {
+      background-color: #3F72AF;
+      color: #FFF;
+    }
+  }
+
+  .filterBtnActive {
+    background-color: #3F72AF;
+    color: #FFF;
+  }
+}

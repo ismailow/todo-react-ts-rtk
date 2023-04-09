@@ -1,0 +1,81 @@
+.task {
+  display: grid;
+  grid-template-columns: 1fr 70px 50px 50px;
+  margin-bottom: 15px;
+  background-color: #DBE2EF;
+  border-radius: 5px;
+  padding-right: 5px;
+  position: relative;
+
+  label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 12px 15px;
+  }
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+  }
+
+  .text {
+    padding: 5px;
+    line-height: 1.2;
+  }
+
+  .editInput {
+    font: 16px/1.4 "Roboto", sans-serif;
+    // height: 29px;
+    border: none;
+    padding: 5px;
+    background: transparent;
+    box-shadow: 0 4px 0 -3px #3F72AF;
+    outline: none;
+  }
+
+  button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    // justify-self: end;
+    padding: 0;
+    transition: opacity .3s linear;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  .edit {
+    background-image: url('./icons/edit.svg');
+    &:disabled {
+      opacity: .8;
+      cursor: default;
+    }
+  }
+
+  .remove {
+    background-image: url('./icons/trash.svg');
+  }
+
+  .save {
+    background-image: url('./icons/check.svg');
+  }
+  
+  .cancel {
+    background-image: url('./icons/cancel.svg');
+    background-size: 20px 20px;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+  }
+}
